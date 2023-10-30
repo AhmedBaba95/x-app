@@ -1,0 +1,24 @@
+{
+  "name": "x-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "runner.js",
+  "scripts": {
+    "start": "node runner.js",
+    "dev": "nodemon runner.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmedBaba95/x-app.git"
+  },
+  "author": "Baba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmedBaba95/x-app/issues"
+  },
+  "homepage": "https://github.com/AhmedBaba95/x-app#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
