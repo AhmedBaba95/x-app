@@ -5,7 +5,7 @@
   "main": "runner.js",
   "scripts": {
     "start": "node runner.js",
-    "dev": "nodemon runner.js",
+    "dev": "nodemon x-app && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

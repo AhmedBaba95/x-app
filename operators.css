@@ -1,0 +1,38 @@
+.operators {
+    width: 600px;
+    height: 80px;
+    display: flex;
+
+}
+
+.operators button {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    border: solid;
+    border-color: grey;
+    border-width: 0.5px;
+    font-size: 35px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: 100;
+}
+
+.equality button {
+    width: 150px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f88663;
+    border: solid;
+    border-color: grey;
+    border-width: 0.5px;
+    font-size: 35px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: 100;
+}

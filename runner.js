@@ -1,7 +1,7 @@
 // Import required Node.js modules
-const fs = require('fs');             // File system module
-const path = require('path');         // Path module for file path manipulation
-const http = require('http');         // HTTP module for creating a simple server
+const fs = require('fs');       // File system module
+const path = require('path');   // Path module for file path manipulation
+const http = require('http');   // HTTP module for creating a simple server
 
 // Define the file path to the HTML file
 const htmlFilePath = path.join(__dirname, 'index.html');
@@ -46,12 +46,18 @@ function injectCSSandJS() {
 
   // Inject CSS links into the HTML by replacing the </head> tag
   cssFiles.forEach((cssFile) => {
-    htmlContent = htmlContent.replace('</head>', `  <link rel="stylesheet" href="./${cssFile}">\n</head>`);
+    // Check if the HTML content already includes the CSS link, if not, add it
+    if (!htmlContent.includes(`<link rel="stylesheet" href="./${cssFile}">`)) {
+      htmlContent = htmlContent.replace('</head>', `  <link rel="stylesheet" href="./${cssFile}">\n</head>`);
+    }
   });
 
   // Inject JS links into the HTML by replacing the </body> tag
   jsFiles.forEach((jsFile) => {
-    htmlContent = htmlContent.replace('</body>', `  <script src="./${jsFile}"></script>\n</body>`);
+    // Check if the HTML content already includes the JS script, if not, add it
+    if (!htmlContent.includes(`<script src="./${jsFile}"></script>`)) {
+      htmlContent = htmlContent.replace('</body>', `  <script src="./${jsFile}"></script>\n</body>`);
+    }
   });
 
   // Write the modified HTML content back to the file
