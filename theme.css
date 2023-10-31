@@ -1,0 +1,53 @@
+.themes button{
+    width: 150px;
+    height: 80px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color:bisque ;
+    border: solid;
+    border-color: grey;
+    border-width: 0.5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.themes button:hover {
+    background-color: rgb(234, 204, 168);
+}
+  
+body.dark-theme {
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+.result.dark-theme {
+    background-color: white;
+}
+
+.result.dark-theme input::placeholder {
+    color: black;
+}
+
+.operators.dark-theme button {
+    background-color: #444;
+    color: #ffffff;
+}
+
+.equality button.dark-theme {
+    background-color: rgb(231, 139, 231);
+}
+
+.numbers_row.dark-theme button{
+    color: #ffffff;
+}
+
+.numbers.dark-theme {
+    background-color: #1c1c1c;
+}
+
+ 

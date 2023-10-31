@@ -8,7 +8,8 @@
     width: 450px;
     height: 320px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    background-color: #ffffff;
 }
 
 .numbers_row {
